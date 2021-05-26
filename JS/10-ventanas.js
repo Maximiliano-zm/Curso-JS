@@ -11,7 +11,5 @@ if (mi_resultado >= 18) {
 
 }else if (mi_resultado < 18) {
     console.log("Usted no es mayor de edad su edad es : " ,mi_resultado);
-   
 
-    
 }
