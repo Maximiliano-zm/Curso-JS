@@ -55,6 +55,7 @@ console.log(elemento , indice);
 //------------------------------------------
 
 //Busqueda dentro de un array con la funcion .find , y ademas con la funcion .findIndex puedo encontrar en que posicion esta el valor buscado
+
 console.log("------")
     
     //var busqueda = lenguajes.find(lenguaje => lenguaje == 'Java');

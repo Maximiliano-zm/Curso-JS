@@ -28,10 +28,9 @@ var numeros = new Array(6)
 // pedir los 6 valores
 Obtenerdatos = prompt("Obtener datos ")
 
-for(var i = 0 ; i < 5; i++){
+for(var i = 0 ; i < 6; i++){
 
-    numeros[i] = parseInt(prompt ("introduce un numero "));
-
+    numeros[i] = parseInt(prompt ("Obtener datos "));
 
 }
 
@@ -53,20 +52,22 @@ mostrarArray(numeros , 'revertidos');
 
 //contar elementos
 
-document.write(numeros.length());
+document.write("Cantidad de casillas " +numeros.length);
 
 //busqueda
-
-var busqueda = parseInt(prompt("buscar un numero " , 0));
- 
+    
 var posicion = numeros.findIndex( numero => numero == busqueda);
 
-if (posicion && posicion != 1) {
-    
-    document.write("ENCONTRADO en la posicion : " , posicion);
+if (posicion && posicion != -1) {
+
+    var busqueda = parseInt(prompt("buscar un numero " , 0));
+
+    document.write(" ENCONTRADO en la posicion : " +posicion);
 
 }else{
 
-     document.write("NO ENCONTRADO ");
+     document.write(" <br> NO ENCONTRADO ");
 
 }
+
+
