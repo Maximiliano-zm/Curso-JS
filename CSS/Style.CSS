@@ -1,21 +1,16 @@
 .BOX{
 
- margin-left : 196.5px;
- top : 383.5px;
- left : 687.5px;
- background : rgb(80, 82, 80);
- border : 0px solid rgb(39, 39, 38);
- width : 323px;
- height : 52px;
- border-radius: 27px;
+width : 200px;
+margin: 20px;
+
  
  /* transition : all 0s;   MOVER WEAS */ 
 
 }
 
-.BOX:hover{
-cursor: pointer;
-background: rgb(202, 55, 55);
-transition:background-color 0.9s ease-in; /*cambio de color en transicion*/
+.dashed{
+
+border: 3px dashed black;
+float: left;
 
 }

@@ -3,7 +3,7 @@ CARGAR();
 
 //timers funciones que pueden ser ejecutadas en un periodo de tiempo
 
-
+function Intervalo() {
     var tiempo = setInterval(function(){
 
         console.log("Set interval ejecutado");
@@ -24,22 +24,31 @@ CARGAR();
     
     }, 1000);
 
+    return tiempo;
 
-var stopboton =  document.querySelector("#BOTONSTOP");
+}
+
+var tiempo = Intervalo();
+
+var stopboton =  document.querySelector("#BOTONSTOP");  
 
 stopboton.addEventListener("click",function(){
     
-alert("se Ejecuto con exito 'STOP'");
-
+    alert("se Ejecuto con exito 'STOP'");
+    clearInterval(tiempo);
 
 });
 
 var startboton = document.querySelector("#BOTONSTART");
 
-startboton.addEventListener("click" , function() {
+
+startboton.addEventListener("click",function() {
+
+    alert("Se Ejecuto con exito 'START'")
+    Intervalo();
     
-alert("se ejecuto con exito 'START'");
-
-
 });
+
+
+
 
